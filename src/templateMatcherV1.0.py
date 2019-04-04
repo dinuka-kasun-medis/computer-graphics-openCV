@@ -71,6 +71,7 @@ def proceed():
         image=cv2.imread(parentImage)
         template=cv2.imread(templateImage)
 
+        #converting RGB to grey image
         imageGrey=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
         templateGrey=cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)
          
@@ -78,11 +79,14 @@ def proceed():
         result=cv2.matchTemplate(imageGrey,templateGrey,cv2.TM_SQDIFF_NORMED)
          
         #finding the occurences of the template
-        #print(top.slider.get())
-        threshold=top.slider.get()
         templateHeight,templateWidth=templateGrey.shape
+
+        #getting threshold value from the slider
+        threshold=top.slider.get()
          
-        #checking the normalized squared difference value is smaller than threshold value so thats its closer to the template or equal to the template
+        #checking the normalized squared difference value is smaller
+        #than threshold value so thats its closer to the template or
+        #equal to the template
         location=np.where(result <= threshold)
          
         #creating black mask for the size of the image
