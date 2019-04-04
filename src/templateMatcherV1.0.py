@@ -6,7 +6,6 @@ from tkinter import filedialog as fd
 from tkinter import messagebox
 import cv2 
 import numpy as np
-#from tkinter import *
 
 import graphic_support
 
@@ -69,8 +68,11 @@ def setTemplate():
 def proceed():
     if(parentImage and templateImage):
         #reading images
-        imageGrey=cv2.imread(parentImage,0)
-        templateGrey=cv2.imread(templateImage,0)
+        image=cv2.imread(parentImage)
+        template=cv2.imread(templateImage)
+
+        imageGrey=cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
+        templateGrey=cv2.cvtColor(template,cv2.COLOR_BGR2GRAY)
          
         #template matching
         result=cv2.matchTemplate(imageGrey,templateGrey,cv2.TM_SQDIFF_NORMED)
