@@ -21,9 +21,7 @@
     - Template image
     - Template matching methodology
 
-  - As the algorithm methodology we choosed [*normalized sum of squared differences*](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html)
-  
-  <br> 
+  - As the algorithm methodology we choosed [*normalized sum of squared differences*](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html) 
    
   ![Capture01](./assets/screenshots/screenshot01.png)
   
@@ -32,11 +30,11 @@
 - **Step 07** - Combining The Mask
 - **Step 08** - Display the Output
 
-### ScreenShots
+### ScreenShots  
 
-![Capture02](./assets/screenshots/screenshot02.jpg)
+![Capture02](./assets/screenshots/screenshot02.JPG)
 
-![Capture03](./assets/screenshots/screenshot03.jpg)
+![Capture03](./assets/screenshots/screenshot03.JPG)
 
 <br>
 
