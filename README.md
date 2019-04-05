@@ -1,4 +1,4 @@
-## Detection of Image occurrences using a template mechanism
+# Detection of Image occurrences using a template mechanism
 
 ### Introduction
 - The objective is to determine the position of all instances of a given template in an parent image.
@@ -6,12 +6,10 @@
 - Template matching
   - A method for searching and finding the location of a template image in a parent image.
   - It simply slides the template image over the input image (as in 2D convolution) and compares the template and patch of input image under the template image.
-<br>
 
 ### Implementation Assumptions
 - Given template image is in the same scale of the parent image.
 - Otherwise we have to rescale the template image to the same scale of the parent image.
-<br>
 
 ### Implementation Process
 - **Step 01** - Reading Images and Templates
@@ -24,12 +22,15 @@
     - Template matching methodology
 
   - As the algorithm methodology we choosed [*normalized sum of squared differences*](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_template_matching/py_template_matching.html)
+  
+  <br> 
+   
   ![Capture01](./assets/screenshots/screenshot01.png)
+  
 - **Step 05** - Thresholding
 - **Step 06** - Tagging The Occurrences
 - **Step 07** - Combining The Mask
 - **Step 08** - Display the Output
-<br>
 
 ### ScreenShots
 
@@ -79,7 +80,7 @@
 <br>
 
 ### Contributing
-Warmly welcome to developers for contributing **PersoAd** Project. Make sure to open an issue and communicate with us before 
+Warmly welcome to developers for contributing this Project. Make sure to open an issue and communicate with us before 
 creating a Pull Request.
 
 <br>
